@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AnkaraPHP Laravel Workshop Freelance Project Management System">
+    <meta name="author" content="AnkaraPHP">
+    <title>Projeler</title>
+    <!-- Stylesheet-->
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!-- Page Styles-->
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <header class="app-header navbar">
+      <button type="button" class="navbar-toggler mobile-sidebar-toggler d-lg-none">☰</button><a href="index.html" class="navbar-brand"></a>
+      <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item"><a href="#" class="nav-link navbar-toggler sidebar-toggler">☰</a></li>
+        <li class="nav-item px-3 active"><a href="index.html" class="nav-link">AnkaraPHP Takım</a></li>
+        <li class="nav-item px-3"><a href="index.html" class="nav-link">Firmam</a></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto px-1">
+        <li class="nav-item dropdown"><a data-toggle="dropdown" href="javascript:;" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle nav-link"><img src="https://api.adorable.io/avatars/50/hello@ankaraphp.github.io.png" alt="hello@ankaraphp.com" class="img-avatar"><span class="d-md-down-none">Hello AnkaraPHP</span></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header text-center"><strong>AnkaraPHP Takım</strong></div><a href="#" class="dropdown-item"><i class="fa fa-users"></i> Kişiler<span class="badge badge-success">5</span></a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
+            <div class="dropdown-header text-center"><strong>Hesap</strong></div><a href="#" class="dropdown-item"><i class="fa fa-user"></i> Profil Bilgileri</a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
+            <div class="divider"></div><a href="#" class="dropdown-item"><i class="fa fa-shield"></i> Kilitle</a><a href="#" class="dropdown-item"><i class="fa fa-lock"></i> Çıkış Yap</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-chart"></i> Pano</a></li>
+            <li class="nav-title">PROJE YÖNETİMİ</li>
+            <li class="nav-item"><a href="projects.html" class="nav-link"><i class="icon-book-open"></i> Projeler<span class="badge badge-danger">5</span></a></li>
+            <li class="nav-item"><a href="customers.html" class="nav-link"><i class="icon-user"></i> Müşteriler<span class="badge badge-info">8</span></a></li>
+            <li class="nav-item"><a href="files.html" class="nav-link"><i class="icon-share"></i> Dosya Merkezi<span class="badge badge-danger">98%</span></a></li>
+            <li class="nav-item"><a href="passwords.html" class="nav-link"><i class="icon-lock-open"></i> Şifre Yöneticisi<span class="badge badge-default">8</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-title">TAKIM</li>
+            <li class="nav-item"><a href="team.html" class="nav-link"><i class="icon-people"></i> Ekip<span class="badge badge-warning">2</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="main">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">FPMS</li>
+          <li class="breadcrumb-item"><a href="index.html">AnkaraPHP Takım</a></li>
+          <li class="breadcrumb-item active">Projeler</li>
+        </ol>
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <p class="text-right"><a href="new-project.html" class="btn btn-success"><i class="fa fa-plus-circle"></i>&nbsp; Yeni Proje Ekle</a></p>
+            <div class="card">
+              <div class="card-header"><i class="fa fa-book">Projeler</i></div>
+              <div class="card-block">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Proje</th>
+                      <th>Müşteri</th>
+                      <th>Başlangıç Tarihi</th>
+                      <th>Bitiş Tarihi</th>
+                      <th>Tamamlanma</th>
+                      <th>İşlem</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>AnkaraPHP Websitesi</td>
+                      <td><a href="customer.html" class="btn btn-info btn-sm">AnkaraPHP</a></td>
+                      <td>3 Haziran 2017</td>
+                      <td><span class="badge badge-warning">Yapım Aşamasında</span></td>
+                      <td>
+                        <div class="progress mb-0 mt-1">
+                          <div role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-striped progress-bar-animated bg-primary">25%</div>
+                        </div>
+                      </td>
+                      <td><a href="project.html" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i>&nbsp;Proje</a></td>
+                    </tr>
+                    <tr>
+                      <td>Workshop Frontend</td>
+                      <td><a href="customer.html" class="btn btn-info btn-sm">Eray</a></td>
+                      <td>3 Haziran 2017</td>
+                      <td>3 Haziran 2017</td>
+                      <td>
+                        <div class="progress mb-0 mt-1">
+                          <div role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-striped bg-success">100%</div>
+                        </div>
+                      </td>
+                      <td><a href="project.html" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i>&nbsp;Proje</a></td>
+                    </tr>
+                    <tr>
+                      <td>Yarım Kalan İşler</td>
+                      <td><a href="customer.html" class="btn btn-info btn-sm">Sinir Bozan Müşteri</a></td>
+                      <td>1 Haziran 2017</td>
+                      <td><span class="badge badge-danger">İptal Edildi</span></td>
+                      <td>
+                        <div class="progress mb-0 mt-1">
+                          <div role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="99" class="progress-bar progress-bar-striped bg-danger">99%</div>
+                        </div>
+                      </td>
+                      <td><a href="project.html" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i>&nbsp;Proje</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="app-footer"><a href="http://ankaraphp.github.io">FPMS</a> © 2017 AnkaraPHP Topluluğu.<span class="float-right">Baked with&nbsp;<a href="http://laravel.com">Laravel</a>&nbsp;and&nbsp;<i class="fa fa-heart love-from-ankaraphp"></i></span></footer>
+    <!-- Javascript-->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

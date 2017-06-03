@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="AnkaraPHP Laravel Workshop Freelance Project Management System">
+    <meta name="author" content="AnkaraPHP">
+    <title>Projeler</title>
+    <!-- Stylesheet-->
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!-- Page Styles-->
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <header class="app-header navbar">
+      <button type="button" class="navbar-toggler mobile-sidebar-toggler d-lg-none">☰</button><a href="index.html" class="navbar-brand"></a>
+      <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item"><a href="#" class="nav-link navbar-toggler sidebar-toggler">☰</a></li>
+        <li class="nav-item px-3 active"><a href="index.html" class="nav-link">AnkaraPHP Takım</a></li>
+        <li class="nav-item px-3"><a href="index.html" class="nav-link">Firmam</a></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto px-1">
+        <li class="nav-item dropdown"><a data-toggle="dropdown" href="javascript:;" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle nav-link"><img src="https://api.adorable.io/avatars/50/hello@ankaraphp.github.io.png" alt="hello@ankaraphp.com" class="img-avatar"><span class="d-md-down-none">Hello AnkaraPHP</span></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header text-center"><strong>AnkaraPHP Takım</strong></div><a href="#" class="dropdown-item"><i class="fa fa-users"></i> Kişiler<span class="badge badge-success">5</span></a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
+            <div class="dropdown-header text-center"><strong>Hesap</strong></div><a href="#" class="dropdown-item"><i class="fa fa-user"></i> Profil Bilgileri</a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
+            <div class="divider"></div><a href="#" class="dropdown-item"><i class="fa fa-shield"></i> Kilitle</a><a href="#" class="dropdown-item"><i class="fa fa-lock"></i> Çıkış Yap</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-chart"></i> Pano</a></li>
+            <li class="nav-title">PROJE YÖNETİMİ</li>
+            <li class="nav-item"><a href="projects.html" class="nav-link"><i class="icon-book-open"></i> Projeler<span class="badge badge-danger">5</span></a></li>
+            <li class="nav-item"><a href="customers.html" class="nav-link"><i class="icon-user"></i> Müşteriler<span class="badge badge-info">8</span></a></li>
+            <li class="nav-item"><a href="files.html" class="nav-link"><i class="icon-share"></i> Dosya Merkezi<span class="badge badge-danger">98%</span></a></li>
+            <li class="nav-item"><a href="passwords.html" class="nav-link"><i class="icon-lock-open"></i> Şifre Yöneticisi<span class="badge badge-default">8</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-title">TAKIM</li>
+            <li class="nav-item"><a href="team.html" class="nav-link"><i class="icon-people"></i> Ekip<span class="badge badge-warning">2</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="main">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">FPMS</li>
+          <li class="breadcrumb-item"><a href="index.html">AnkaraPHP Takım</a></li>
+          <li class="breadcrumb-item"><a href="projects.html">Projeler</a></li>
+          <li class="breadcrumb-item active">AnkaraPHP Websitesi</li>
+        </ol>
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="card card-accent-primary">
+                  <div class="card-header">AnkaraPHP Websitesi<span class="badge badge-pill badge-warning float-right">25%</span></div>
+                  <div class="card-block p-0">
+                    <table class="table mb-0">
+                      <tr>
+                        <th>Proje Adı:</th>
+                        <td>AnkaraPHP Websitesi</td>
+                      </tr>
+                      <tr>
+                        <th>Açıklama:</th>
+                        <td>AnkaraPHP topluluğu için bir websitesi oluşturmak ve etkinlikler hakkında daha detaylı bilgi vermek.</td>
+                      </tr>
+                      <tr>
+                        <th>Başlangıç:</th>
+                        <td>3 Haziran 2017</td>
+                      </tr>
+                      <tr>
+                        <th>Durumu:</th>
+                        <td><span class="badge badge-warning">Yapım Aşamasında</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card"><img src="assets/img/example-company.svg" alt="AnkaraPHP" class="card-img-top pt-5 pb-5">
+                  <div class="card-block">
+                    <h4 class="card-title">AnkaraPHP</h4>
+                    <p class="card-text">Müşteri Notları</p><a href="#" class="btn btn-primary">Müşteri Detayları</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <ul role="tablist" id="projectTab" class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item"><a href="#todo" data-toggle="tab" role="tab" aria-controls="todo" class="nav-link active">Yapılacaklar &nbsp;<span class="badge badge-pill badge-primary">3</span></a></li>
+                      <li class="nav-item"><a href="#passwords" data-toggle="tab" role="tab" aria-controls="passwords" class="nav-link">Şifreler &nbsp;<span class="badge badge-pill badge-primary">2</span></a></li>
+                      <li class="nav-item"><a href="#files" data-toggle="tab" role="tab" aria-controls="files" class="nav-link">Dosyalar &nbsp;<span class="badge badge-pill badge-primary">4</span></a></li>
+                      <li class="nav-item"><a href="#team" data-toggle="tab" role="tab" aria-controls="team" class="nav-link">Ekip &nbsp;<span class="badge badge-pill badge-primary">3</span></a></li>
+                    </ul>
+                  </div>
+                  <div class="card-block">
+                    <div class="tab-content">
+                      <div role="tabpanel" id="todo" class="tab-pane p-0 active">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <select class="form-control">
+                              <option value="0">Kişi</option>
+                              <option value="-1">Herkes</option>
+                              <option value="1">Eray</option>
+                              <option value="2">Furkan</option>
+                              <option value="3">AliFii</option>
+                            </select>
+                          </div>
+                          <div class="col-md-9">
+                            <input type="text" placeholder="Yeni Ekle..." class="form-control">
+                          </div>
+                          <div class="col-md-1">
+                            <button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus-circle"></i></button>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-md-2"><a href="#" class="todo-name"><img src="https://api.adorable.io/avatars/30/furkan@furkan.com.png" class="img-avatar"><span>Furkan</span></a></div>
+                          <div class="col-md-9">
+                            <div class="checkbox mt-2">
+                              <label for="todo1">
+                                <input type="checkbox" name="todo1" value="1" id="todo1">&nbsp; Yeni Websitesi Hakkında Konuşulacak...
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md-1">
+                            <button type="button" class="btn btn-danger btn-block"><i class="fa fa-trash"></i></button>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-md-2"><a href="#" class="todo-name"><img src="https://api.adorable.io/avatars/30/furkan@furkan.com.png" class="img-avatar"><span>Furkan</span></a></div>
+                          <div class="col-md-9">
+                            <div class="checkbox mt-2">
+                              <label for="todo2">
+                                <input type="checkbox" name="todo2" value="1" id="todo2">&nbsp; Yeni Websitesi Hakkında Konuşulacak...
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-md-1">
+                            <button type="button" class="btn btn-danger btn-block"><i class="fa fa-trash"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" id="passwords" class="tab-pane p-0">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="card">
+                              <div class="card-header">Registrar</div>
+                              <div class="card-block">
+                                <div class="form-group">
+                                  <div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" value="username" class="form-control">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" value="●●●●●●" class="form-control"><span class="input-group-btn">
+                                      <button type="button" class="btn btn-danger"><i class="fa fa-eye"></i></button></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card">
+                              <div class="card-header">Pass</div>
+                              <div class="card-block">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input type="text" disabled class="form-control">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" value="●●●●●●" class="form-control"><span class="input-group-btn">
+                                      <button type="button" class="btn btn-danger"><i class="fa fa-eye"></i></button></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" id="files" class="tab-pane p-0">
+                        <div class="row">
+                          <div class="col-md-3"><a href="#" class="btn btn-block btn-primary mb-4"><i class="fa fa-2x fa-file-word-o mb-2"></i><br>bilgiler.docx</a></div>
+                          <div class="col-md-3"><a href="#" class="btn btn-block btn-primary mb-4"><i class="fa fa-2x fa-file-pdf-o mb-2"></i><br>teklif-formu.pdf</a></div>
+                          <div class="col-md-3"><a href="#" class="btn btn-block btn-primary mb-4"><i class="fa fa-2x fa-file-archive-o mb-2"></i><br>fotolar.zip</a></div>
+                          <div class="col-md-3"><a href="#" class="btn btn-block btn-primary mb-4"><i class="fa fa-2x fa-file-o mb-2"></i><br>deneme.xyz</a></div>
+                          <div class="col-md-3"><a href="#" class="btn btn-block btn-success mb-4"><i class="fa fa-2x fa-plus-circle mb-2"></i><br>Dosya Ekle</a></div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" id="team" class="tab-pane p-0">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="card">
+                              <div class="card-block p-3 clearfix"><img src="https://api.adorable.io/avatars/50/eray@labkod.com.png" class="mr-3 float-left team-member-img">
+                                <h5 class="mt-2 mb-0">Eray</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card">
+                              <div class="card-block p-3 clearfix"><img src="https://api.adorable.io/avatars/50/furkan@furkan.com.png" class="mr-3 float-left team-member-img">
+                                <h5 class="mt-2 mb-0">Furkan</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card">
+                              <div class="card-block p-3 clearfix"><img src="https://api.adorable.io/avatars/50/alifii@alifii.com.png" class="mr-3 float-left team-member-img">
+                                <h5 class="mt-2 mb-0">AliFii</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="app-footer"><a href="http://ankaraphp.github.io">FPMS</a> © 2017 AnkaraPHP Topluluğu.<span class="float-right">Baked with&nbsp;<a href="http://laravel.com">Laravel</a>&nbsp;and&nbsp;<i class="fa fa-heart love-from-ankaraphp"></i></span></footer>
+    <!-- Javascript-->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
