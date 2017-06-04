@@ -12,53 +12,9 @@
     <!-- Page Styles-->
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
-<header class="app-header navbar">
-    <button type="button" class="navbar-toggler mobile-sidebar-toggler d-lg-none">☰</button><a href="{{ path('homepage') }}" class="navbar-brand"></a>
-    <ul class="nav navbar-nav d-md-down-none">
-        <li class="nav-item"><a href="#" class="nav-link navbar-toggler sidebar-toggler">☰</a></li>
-        <li class="nav-item px-3 active"><a href="{{ path('homepage') }}" class="nav-link">{{ company.name }}</a></li>
-    </ul>
-    <ul class="nav navbar-nav ml-auto px-1">
-        <li class="nav-item dropdown"><a data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle nav-link"><img src="https://api.adorable.io/avatars/50/{{ currentUser.email }}.png" alt="{{ currentUser.email }}" class="img-avatar"><span class="d-md-down-none">Merhaba {{ currentUser.fullname ? currentUser.fullname : currentUser.username }}</span></a>
-            <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-header text-center"><strong>{{ company.name }}</strong></div><a href="#" class="dropdown-item"><i class="fa fa-users"></i> Kişiler<span class="badge badge-success">5</span></a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
-                <div class="dropdown-header text-center"><strong>Hesap</strong></div><a href="#" class="dropdown-item"><i class="fa fa-user"></i> Profil Bilgileri</a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
-                <div class="divider"></div><a href="#" class="dropdown-item"><i class="fa fa-shield"></i> Kilitle</a><a href="{{ path('fos_user_security_logout') }}" class="dropdown-item"><i class="fa fa-lock"></i> Çıkış Yap</a>
-            </div>
-        </li>
-    </ul>
-</header>
-<div class="app-body">
-    {% include 'sidebar.html.twig' %}
-    <main class="main">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">PMS</li>
-            <li class="breadcrumb-item"><a href="{{ path('homepage') }}">{{ company.name }}</a></li>
-            <li class="breadcrumb-item active">Pano</li>
-        </ol>
-        {% block body %}{% endblock %}
-    </main>
-</div>
-    {% block javascripts %}{% endblock %}
-<footer class="app-footer"><a href="https://github.com/lahmacun/pms">PMS</a> © 2017 - Mustafa Zahid Efe</footer>
+{% block head %}{% endblock %}
+{% block body %}{% endblock %}
 <!-- Javascript-->
 <script src="{{ asset('panel/assets/js/app.js') }}"></script>
 </body>
 </html>
-{% block sidebar %}
-<div class="sidebar">
-    <nav class="sidebar-nav">
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-chart"></i> Pano</a></li>
-            <li class="nav-title">PROJE YÖNETİMİ</li>
-            <li class="nav-item"><a href="projects.html" class="nav-link"><i class="icon-book-open"></i> Projeler<span class="badge badge-danger">5</span></a></li>
-            <li class="nav-item"><a href="customers.html" class="nav-link"><i class="icon-user"></i> Müşteriler<span class="badge badge-info">8</span></a></li>
-            <li class="nav-item"><a href="files.html" class="nav-link"><i class="icon-share"></i> Dosya Merkezi<span class="badge badge-danger">98%</span></a></li>
-            <li class="nav-item"><a href="passwords.html" class="nav-link"><i class="icon-lock-open"></i> Şifre Yöneticisi<span class="badge badge-default">8</span></a></li>
-            <li class="divider"></li>
-            <li class="nav-title">TAKIM</li>
-            <li class="nav-item"><a href="team.html" class="nav-link"><i class="icon-people"></i> Ekip<span class="badge badge-warning">2</span></a></li>
-        </ul>
-    </nav>
-</div>
-{% endblock %}

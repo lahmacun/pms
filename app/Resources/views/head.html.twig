@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+<header class="app-header navbar">
+    <button type="button" class="navbar-toggler mobile-sidebar-toggler d-lg-none">☰</button><a href="{{ path('homepage') }}" class="navbar-brand"></a>
+    <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item"><a href="#" class="nav-link navbar-toggler sidebar-toggler">☰</a></li>
+        <li class="nav-item px-3 active"><a href="{{ path('homepage') }}" class="nav-link">{{ company.name }}</a></li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto px-1">
+        <li class="nav-item dropdown"><a data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle nav-link"><img src="https://api.adorable.io/avatars/50/{{ currentUser.email }}.png" alt="{{ currentUser.email }}" class="img-avatar"><span class="d-md-down-none">Merhaba {{ currentUser.fullname ? currentUser.fullname : currentUser.username }}</span></a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header text-center"><strong>{{ company.name }}</strong></div><a href="#" class="dropdown-item"><i class="fa fa-users"></i> Kişiler<span class="badge badge-success">5</span></a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
+                <div class="dropdown-header text-center"><strong>Hesap</strong></div><a href="#" class="dropdown-item"><i class="fa fa-user"></i> Profil Bilgileri</a><a href="#" class="dropdown-item"><i class="fa fa-wrench"></i> Ayarlar</a>
+                <div class="divider"></div><a href="#" class="dropdown-item"><i class="fa fa-shield"></i> Kilitle</a><a href="{{ path('fos_user_security_logout') }}" class="dropdown-item"><i class="fa fa-lock"></i> Çıkış Yap</a>
+            </div>
+        </li>
+    </ul>
+</header>
+<div class="app-body">
+    {% include 'sidebar.html.twig' %}
+    <main class="main">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">PMS</li>
+            <li class="breadcrumb-item"><a href="{{ path('homepage') }}">{{ company.name }}</a></li>
+            <li class="breadcrumb-item active">Pano</li>
+        </ol>
+        {% block body %}{% endblock %}
+    </main>
+</div>
+{% block javascripts %}{% endblock %}
+<footer class="app-footer"><a href="https://github.com/lahmacun/pms">PMS</a> © 2017 - Mustafa Zahid Efe</footer>
+{% endblock %}
