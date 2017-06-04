@@ -6,11 +6,6 @@ Geliştirdiğim projeleri müşterilerle ve ekibimle kolay bir şekilde görüp 
 Yapılacaklar
 ------------
 
-Genel İşlemler
---------------
-- Admin panelinin arayüzü extends etmeye hazır hale getirilecek.
-- Giriş sayfasını arayüzü ayarlanacak.
-
 Süper Admin
 -----------
 - Personel ekleme/düzenleme/silme işlemleri
@@ -28,3 +23,6 @@ Personel
 Bitmiş İşlemler
 ---------------
 - Personel giriş-çıkış işlemleri yapılacak.
+- Admin panelinin arayüzü extends etmeye hazır hale getirilecek.
+- Giriş sayfasını arayüzü ayarlanacak.
+- Sifremi unuttum sayfalari arayuze entegre edildi.
