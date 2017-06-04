@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Freelance Project Management System">
     <meta name="author" content="Mustafa Zahid Efe">
-    <title>Pano</title>
+    <title>{{ title is defined ? title : 'Project Management System' }}</title>
     <!-- Stylesheet-->
     <link href="{{ asset('panel/assets/css/app.css') }}" rel="stylesheet">
     <!-- Page Styles-->
@@ -17,4 +17,25 @@
 <!-- Javascript-->
 <script src="{{ asset('panel/assets/js/app.js') }}"></script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+{% block sidebar %}
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="icon-chart"></i> Pano</a></li>
+            <li class="nav-title">PROJE YÖNETİMİ</li>
+            <li class="nav-item"><a href="projects.html" class="nav-link"><i class="icon-book-open"></i> Projeler<span class="badge badge-danger">5</span></a></li>
+            <li class="nav-item"><a href="customers.html" class="nav-link"><i class="icon-user"></i> Müşteriler<span class="badge badge-info">8</span></a></li>
+            <li class="nav-item"><a href="files.html" class="nav-link"><i class="icon-share"></i> Dosya Merkezi<span class="badge badge-danger">98%</span></a></li>
+            <li class="nav-item"><a href="passwords.html" class="nav-link"><i class="icon-lock-open"></i> Şifre Yöneticisi<span class="badge badge-default">8</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-title">TAKIM</li>
+            <li class="nav-item"><a href="team.html" class="nav-link"><i class="icon-people"></i> Ekip<span class="badge badge-warning">2</span></a></li>
+        </ul>
+    </nav>
+</div>
+{% endblock %}
+>>>>>>> 74365213e6a7bd156d688c6aa41c40b82268d8e1
